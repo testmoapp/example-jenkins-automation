@@ -16,12 +16,7 @@ describe('files', function () {
         });
 
         it('should export text', function () {
-            // Fail in 50% of cases
-            if (Math.random() < 0.5) {
-                throw new Error('An exception occurred');
-            } else {
-                assert.isTrue(true);
-            }
+            assert.isTrue(true);
         });
     });
 
