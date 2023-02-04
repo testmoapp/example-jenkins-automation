@@ -35,7 +35,7 @@ pipeline {
                 // Run automated tests and report results to Testmo
                 sh '''
                   npx testmo automation:run:submit \
-                    --instance $TESTMO_URL \
+                    --instance "$TESTMO_URL" \
                     --project-id 1 \
                     --name "Mocha test run" \
                     --source "unit-tests" \
