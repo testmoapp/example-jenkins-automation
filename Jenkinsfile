@@ -17,7 +17,10 @@ pipeline {
                 GIT_SHORT_COMMIT = "${GIT_COMMIT[0..7]}"
             }
             steps {
+                // Skip this line if not installing your own Node.js packages
                 sh 'npm ci'
+
+                // Install Testmo CLI tool locally (then use npx testmo .. to run it)
                 sh 'npm install --no-save @testmo/testmo-cli'
 
                 // Optionally add a couple of fields such as the
