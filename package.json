@@ -1,7 +1,7 @@
 {
   "scripts": {
     "mocha": "npx mocha",
-    "mocha-junit": "npx mocha  --reporter node_modules/mocha-junit-reporter --reporter-options jenkinsMode=1,outputs=1,mochaFile=results/mocha-test-results.xml"
+    "mocha-junit": "npx mocha --reporter node_modules/mocha-junit-reporter --reporter-options jenkinsMode=1,outputs=1,mochaFile=results/mocha-test-results.xml"
   },
   "dependencies": {
     "chai": "^4.3.7",
