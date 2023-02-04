@@ -32,6 +32,7 @@ pipeline {
                     --url $BUILD_URL --resources resources.json
                 '''
 
+                // Run automated tests and report results to Testmo
                 sh '''
                   npx testmo automation:run:submit \
                     --instance $TESTMO_URL \
